@@ -1,0 +1,61 @@
+{
+  "name": "@luk82/lit-tailwind-starterkit",
+  "version": "1.0.3",
+  "description": "Lit, Tailwind CSS, Storybook, Cypress, Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docs": "jsdoc -c jsdoc.json",
+    "lint": "tsc --noEmit --allowJs -p jsconfig.json --maxNodeModuleJsDepth 1 && eslint --ext .js --cache .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "postcss ./static/tailwind.css -o ./static/tw.css --watch --verbose",
+    "tw:build:dev": "npx tailwindcss -i ./static/tailwind.css -o ./static/tw.css --watch",
+    "tw:create": "node scripts/build-tailwindjs.js --input ./static/tw.css --output ./static/twlit.js --watch",
+    "cy": "cypress open",
+    "cy:test:run": "cypress run",
+    "cy:test:updateSnapshots": "npx cypress run --env updateSnapshots=true",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "author": "Lukas Chowis",
+  "license": "LicenseRef-LICENSE",
+  "devDependencies": {
+    "@lit-labs/motion": "^1.0.6",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/web-components": "^7.6.17",
+    "@storybook/web-components-vite": "^7.6.17",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.3",
+    "cypress": "^13.6.4",
+    "cypress-image-diff-js": "^2.1.3",
+    "cypress-lit": "^0.0.8",
+    "eslint": "^8.56.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "jsdoc": "^4.0.2",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.17",
+    "storybook-theme-switch-addon": "^0.0.6",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  },
+  "dependencies": {
+    "css": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "lit": "^3.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}

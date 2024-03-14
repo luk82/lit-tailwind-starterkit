@@ -1,0 +1,19 @@
+:root {
+  --color-1: 230 225 197;
+  --color-2: 212 203 146;
+  --color-3: 57 92 107;
+  --color-4: 128 164 237;
+  --color-5: 188 211 242;
+
+  /* link component css variables */
+  --link-primary-bg: #395c6b;
+  --link-secondary-bg: #bcd3f2;
+  --link-text: white;
+  --link-bg: rgb(57 92 107);
+  --link-bg-hover: rgb(212 203 146);
+  --link-text-hover: rgb(57 92 107);
+  --link-icon-margin: 8px;
+
+  /* Global css variables */
+  --margin-bottom: 2rem;
+}

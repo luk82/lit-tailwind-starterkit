@@ -1,0 +1,16 @@
+:root {
+  --color-1: 86 163 166;
+  --color-2: 72 69 56;
+  --color-3: 202 212 157;
+  --color-4: 212 234 200;
+  --color-5: 192 216 224;
+
+  --link-primary-bg: rgb(var(--color-1));
+  --link-secondary-bg: rgb(var(--color-2));
+  --link-text: white;
+  --link-bg: rgb(var(--color-3));
+  --link-bg-hover: rgb(var(--color-2));
+  --link-text-hover: rgb(var(--color-1));
+
+  --margin-bottom: 2rem;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lit Tailwind Starterkit</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', Courier, monospace;
+
+      --link-bg: rgb(59, 130, 246);
+      --link-bg-hover: rgb(37, 99, 235);
+      --link-text: rgb(255, 255, 255);
+      --link-icon-margin: 8px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+      max-width: 500px;
+    }
+  </style>
+  <script type="module" src="/src/components/lit-tw-link/lit-tw-link.js"></script>
+</head>
+
+<body>
+  <img src="static/images/logo.png" width="200px" alt="Image">
+  <p>This is a "Starter kit" for developing and testing Lit web components. Technology stack includes Vanilla
+    JavaScript, JSDoc, Cypress for unit tests and visual regression, Storybook, Vite, ESLint, and Prettier. Also
+    includes a GitHub workflow for deploying Git packages.</p>
+
+  <lit-tw-link variant="primary" link="readme.md" hasArrow><span slot="icon"><img
+        src="/static/images/rocket-svgrepo-com.svg" width="20px" height="20px" /></span>View Readme.md
+    file</lit-tw-link>
+
+</body>
+
+</html>
